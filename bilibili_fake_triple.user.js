@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         B站视频一键伪装三联
+// @name         B站视频一键伪装三连
 // @namespace    http://tampermonkey.net/
 // @version      0.7
-// @description  当某人要求你三联B站视频时帮你让他以为你已经三联了
+// @description  当某人要求你三连B站视频时帮你让他以为你已经三连了
 // @author       Svvcvv
 // @match        *://*.bilibili.com/video/*
 // @grant        none
@@ -18,9 +18,9 @@
         // 创建按钮
         const fakeTripleBtn = document.createElement('div');
         fakeTripleBtn.className = 'fake-triple-btn video-toolbar-left-item';
-        fakeTripleBtn.title = '伪装三联 (R) | 右键隐藏';
+        fakeTripleBtn.title = '伪装三连 (R) | 右键隐藏';
         fakeTripleBtn.innerHTML = `
-            <span class="btn-text">伪装三联</span>
+            <span class="btn-text">伪装三连</span>
             <span class="hide-icon" style="margin-left:5px;display:none;">ⓧ</span>
         `;
         fakeTripleBtn.style.cssText = `
@@ -224,3 +224,4 @@
 
     }, 3000);
 })();
+
